@@ -439,10 +439,10 @@ section {
 }
 
 
-/* Hide the preloader when it's done */
-.loaded .preloader {
-  opacity: 0;
-  pointer-events: none;
+/* Show the preloader when it's active */
+.preloader.active {
+  opacity: 1;
+  pointer-events: all;
 }
 
 /*--------------------------------------------------------------
