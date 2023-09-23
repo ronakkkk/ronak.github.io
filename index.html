@@ -37,12 +37,39 @@
       background-color: #0056b3;
       border-color: #0056b3;
     }
+    .dark-mode-switch {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      z-index: 1000;
+      display: flex;
+      align-items: center;
+      color: #333;
+    }
+
+    .dark-mode-switch label {
+      margin-right: 10px;
+    }
+
+    /* Apply dark mode styles */
+    body.dark-mode {
+      background-color: #333;
+      color: #fff;
+    }
+
+    /* Dark mode styles for specific elements, adjust as needed */
+    .dark-mode h1, .dark-mode h2, .dark-mode h3 {
+      color: #fff;
+    }
   </style>
   <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
 </head>
 
 <body>
 
+  <div class="preloader">
+    <div class="spinner"></div>
+  </div>
   <!-- ======= Mobile nav toggle button ======= -->
   <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
 
@@ -308,7 +335,10 @@
 
   <!-- ======= Footer ======= -->
  
-
+  <div class="dark-mode-switch">
+    <label for="dark-mode-toggle">Dark Mode:</label>
+    <input type="checkbox" id="dark-mode-toggle">
+  </div>
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
   <!-- Vendor JS Files -->
