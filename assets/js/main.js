@@ -12,21 +12,6 @@ document.addEventListener("DOMContentLoaded", function () {
   }, 2000); // You can adjust the delay (in milliseconds) as needed
 });
 
-// JavaScript to toggle dark mode
-
-const darkModeToggle = document.getElementById('dark-mode-toggle');
-const body = document.body;
-
-darkModeToggle.addEventListener('change', () => {
-  body.classList.toggle('dark-mode');
-  // You can save the user's preference in localStorage for persistence
-});
-
-// JavaScript to remove preloader when content is loaded
-window.addEventListener('load', () => {
-  const preloader = document.querySelector('.preloader');
-  preloader.classList.add('loaded');
-});
 (function() {
   "use strict";
 
